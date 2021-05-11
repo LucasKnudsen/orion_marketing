@@ -4,15 +4,15 @@ import about from '../assets/about.png'
 const About = () => {
   return (
     <div style={styles.container}>
-      <div style={{flex: 3, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <img src={about} alt='about' style={{height: '25vw'}} />
+      <div style={{ flex: 3, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img src={about} alt='about' style={{ height: '25vw' }} />
       </div>
-      <div style={{flex: 2, paddingRight: 25}}>
+      <div style={{ flex: 2, paddingRight: 50, display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
         <p>Who are we?</p>
         <h1 style={{ textTransform: 'uppercase' }}>We offer <em style={{ textDecoration: 'underline' }}>professional</em> protection</h1>
         <br />
         <p>We have been in business for the last 25 years in investment funds and capital markets industry holding both DFC (Derivatives Fundamentals)
-          and FLC (Futures Licensing) designations. Exclusively focused on trade forecasting, adjustments and hedging options risk.
+        and FLC (Futures Licensing) designations. Exclusively focused on trade forecasting, adjustments and hedging options risk.
         </p>
         <br />
         <p>We own a fund in Copenhagen to service clients in Europe and same in Toronto to service North America</p>

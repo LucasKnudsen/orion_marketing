@@ -1,4 +1,5 @@
 import React from 'react'
+import ChooseStock from './ChooseStock'
 
 const steps = [
   { title: 'Download App', content: 'Download our app from Google Play or App Store' },
@@ -22,6 +23,7 @@ const HowTo = () => {
           </div>
         ))}
       </div>
+      <ChooseStock />
     </div>
   )
 }
