@@ -123,10 +123,12 @@ const styles = {
     marginTop: 40
   },
   container: {
-    marginTop: 50,
+    marginTop: 150,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
   },
   searchField: {
-    width: '30%',
     marginTop: 25
   }
 
