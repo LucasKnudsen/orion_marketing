@@ -1,6 +1,5 @@
 import React from 'react'
 import divider from '../assets/divider.png'
-import Button from '@material-ui/core/Button';
 
 const BottomDivider = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import iphone from '../assets/iphone.png'
+import gif from '../assets/giff.gif'
 import appstore from '../assets/appstore.png'
 import googleplay from '../assets/googleplay.png'
 import background from '../assets/background.png'
@@ -40,7 +40,7 @@ const Hero = () => {
       width: 205,
     },
     img: {
-      height: '40vw'
+      height: '40vw',
     }
   }
 
@@ -49,13 +49,13 @@ const Hero = () => {
       <div style={{ padding: '0 20%', height: '50vw', display: 'flex', alignItems: 'center', flex: 1, marginBottom: 100 }}>
         <div style={styles.infoContainer}>
           <p>Try it for free!</p>
-          <h1 style={{ textTransform: 'uppercase', fontSize: 37 }}>Options for everybody</h1>
+          <h1 style={{ textTransform: 'uppercase'}}>Options for everybody</h1>
           <h3 style={{ color: 'lightgrey', textTransform: 'capitalize' }} >Created to make protection easy</h3>
           <Button style={{ background: `url(${googleplay})`, ...styles.button }} />
           <Button style={{ background: `url(${appstore})`, ...styles.button, }} />
         </div>
         <div style={styles.imgContainer}>
-          <img src={iphone} alt='animation' style={styles.img} />
+          <img src={gif} alt='animation' style={styles.img} />
         </div>
       </div>
       <HowTo />
