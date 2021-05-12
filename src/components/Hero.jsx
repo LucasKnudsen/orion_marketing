@@ -49,12 +49,13 @@ const Hero = () => {
       <div style={{ padding: '0 20%', height: '50vw', display: 'flex', alignItems: 'center', flex: 1, marginBottom: 100 }}>
         <div style={styles.infoContainer}>
           <p>Try it for free!</p>
-          <h1 style={{ textTransform: 'uppercase'}}>Options for everybody</h1>
+          <h1 style={{ textTransform: 'uppercase' }}>Options for everybody</h1>
           <h3 style={{ color: 'lightgrey', textTransform: 'capitalize' }} >Created to make protection easy</h3>
           <Button style={{ background: `url(${googleplay})`, ...styles.button }} />
           <Button style={{ background: `url(${appstore})`, ...styles.button, }} />
         </div>
         <div style={styles.imgContainer}>
+          <img src={gif} alt='animation' style={{opacity: 0.2, position: 'absolute', transform: 'translate(-8px, 5px)', zIndex: -1, height: '40vw' }} />
           <img src={gif} alt='animation' style={styles.img} />
         </div>
       </div>
