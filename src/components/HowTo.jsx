@@ -10,7 +10,7 @@ const steps = [
 
 const HowTo = () => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} id='howTo'>
       <p>Try it for free!</p>
       <h1 style={{ textTransform: 'uppercase' }}>How it <em style={{ textDecoration: 'underline' }}>Works</em></h1>
       <div style={styles.steps}>

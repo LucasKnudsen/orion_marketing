@@ -3,7 +3,7 @@ import about from '../assets/about.png'
 
 const About = () => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} id='about'>
       <div style={{ flex: 3, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img src={about} alt='about' style={{ height: '25vw' }} />
       </div>

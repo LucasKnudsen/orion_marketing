@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} id='contact'>
       <form id='contact-form' style={{display: 'flex', alignItems: 'center'}}>
         <div  style={{textAlign: 'center'}}>
           <input type='text' name='user_name' placeholder='Name' style={styles.input} />

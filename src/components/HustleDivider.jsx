@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 
 const HustleDivider = () => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} id="sideHustle">
       <div>
         <h1 style={{ textTransform: 'uppercase', color: 'white' }}>Side <em style={{ textDecoration: 'underline' }}>Hustle</em></h1>
         <p style={{color: 'white', opacity: 0.6}}>Join and help us spread the word</p>
