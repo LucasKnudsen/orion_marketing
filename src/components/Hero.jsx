@@ -8,29 +8,38 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-scroll';
 import HowTo from './HowTo';
 
-let isTabletOrMobile;
-
 const Hero = () => {
-  isTabletOrMobile = useMediaQuery({ query: '(max-width: 700px)' });
+  let isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 
   const styles = {
     container: {
-      height: isTabletOrMobile ? '100vh' : 'auto',
+      height: 'auto',
       display: 'flex',
-      flexDirection: isTabletOrMobile ? 'column' : 'row',
       background: `url(${background})`,
-      backgroundSize: '100vw 70vw',
+      backgroundSize: isMobile ? '100vw' : '100vw 70vw',
       backgroundRepeat: 'no-repeat',
       flexWrap: 'wrap',
+    },
+    wrapper: {
+      padding: isMobile ? '25px 25px' : '0 20%',
+      marginTop: isMobile && 50,
+      height: isMobile ? '100vh' : '50vw',
+      display: 'flex',
+      flexDirection: isMobile ? 'column-reverse' : 'row',
+      alignItems: 'center',
+      flex: 1,
+      marginBottom: 100,
     },
     infoContainer: {
       color: '#041b20',
       flex: 1,
+      textAlign: isMobile && 'center',
     },
     imgContainer: {
-      flex: 1,
+      flex: !isMobile && 1,
       display: 'flex',
       justifyContent: 'center',
+      marginBottom: isMobile && 25,
     },
     button: {
       marginTop: 25,
@@ -41,37 +50,48 @@ const Hero = () => {
       width: 205,
     },
     img: {
-      height: '40vw',
+      height: isMobile ? '40vh' : '40vw',
     },
   };
 
   return (
     <div style={styles.container} id='hero'>
-      <div
-        style={{ padding: '0 20%', height: '50vw', display: 'flex', alignItems: 'center', flex: 1, marginBottom: 100 }}>
+      <div style={styles.wrapper}>
         <div style={styles.infoContainer}>
           <p>Try it for free!</p>
           <h1 style={{ textTransform: 'uppercase' }}>Options for everybody</h1>
-          <h3 style={{ color: 'lightgrey', textTransform: 'capitalize' }}>Created to make protection easy</h3>
+          <h3
+            style={{
+              color: 'lightgrey',
+              textTransform: 'capitalize',
+            }}>
+            Created to make protection easy
+          </h3>
           <Link to='contact'>
-            <Button style={{ background: `url(${googleplay})`, ...styles.button }} />
+            <Button
+              style={{ background: `url(${googleplay})`, ...styles.button }}
+            />
           </Link>
           <Link to='contact'>
-            <Button style={{ background: `url(${appstore})`, ...styles.button }} />
+            <Button
+              style={{ background: `url(${appstore})`, ...styles.button }}
+            />
           </Link>
         </div>
         <div style={styles.imgContainer}>
-          <img
-            src={gif}
-            alt='animation'
-            style={{
-              opacity: 0.2,
-              position: 'absolute',
-              transform: 'translate(-8px, 5px)',
-              zIndex: -1,
-              height: '40vw',
-            }}
-          />
+          {!isMobile && (
+            <img
+              src={gif}
+              alt='animation'
+              style={{
+                opacity: 0.2,
+                position: 'absolute',
+                transform: 'translate(-8px, 5px)',
+                zIndex: -1,
+                height: '40vw',
+              }}
+            />
+          )}
           <img src={gif} alt='animation' style={styles.img} />
         </div>
       </div>

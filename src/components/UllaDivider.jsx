@@ -15,14 +15,21 @@ const UllaDivider = () => {
     <div style={styles.container}>
       <div style={styles.infoWrapper}>
         <h1 style={{ textTransform: 'uppercase', color: 'white' }}>
-          Watch <em style={{ textDecoration: 'underline' }}>Video</em> Presentation
+          Watch <em style={{ textDecoration: 'underline' }}>Video</em>{' '}
+          Presentation
         </h1>
       </div>
       <div style={styles.imgWrapper}>
         <img
           src={play}
           alt='play'
-          style={{ zIndex: 1, alignSelf: 'center', paddingLeft: 40, height: '70%', cursor: 'pointer' }}
+          style={{
+            zIndex: 1,
+            alignSelf: 'center',
+            paddingLeft: 40,
+            height: '70%',
+            cursor: 'pointer',
+          }}
           onClick={() => setOpen(true)}
         />
         <img src={ulla} alt='ulla' style={styles.img} />

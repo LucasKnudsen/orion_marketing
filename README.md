@@ -2,6 +2,7 @@
 
 - Responsive
 - Contact email / newsletter
+- Wistia video :(
 
 Main color: #29b380
 Secondary color: #09393d

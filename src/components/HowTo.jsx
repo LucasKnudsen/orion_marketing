@@ -41,7 +41,7 @@ export default HowTo;
 
 const styles = {
   container: {
-    padding: '0 20%',
+    margin: '0 20%',
     width: '100%',
   },
   steps: {
