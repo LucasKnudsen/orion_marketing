@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <div style={styles.container}>
       <img src={logo} alt='logo' style={styles.img} height='40' />
-      <Link to="">
-        <p style={styles.menuButton}>Try It</p>
+      <Link to="hero">
+        <p style={styles.menuButton}>Download Now</p>
       </Link>
       <Link to="howTo" smooth={true} offset={-200}>
         <p style={styles.menuButton}>Check Value</p>

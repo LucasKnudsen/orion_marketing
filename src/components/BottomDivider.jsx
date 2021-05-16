@@ -1,14 +1,11 @@
-import React from 'react'
-import divider from '../assets/divider.png'
+import React from 'react';
+import divider from '../assets/divider.png';
 
 const BottomDivider = () => {
-  return (
-    <div style={styles.container}>
-    </div>
-  )
-}
+  return <div style={styles.container}></div>;
+};
 
-export default BottomDivider
+export default BottomDivider;
 
 const styles = {
   container: {
@@ -20,6 +17,6 @@ const styles = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
-}
+};

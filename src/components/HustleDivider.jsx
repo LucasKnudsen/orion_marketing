@@ -1,22 +1,24 @@
-import React from 'react'
-import divider from '../assets/divider.png'
+import React from 'react';
+import divider from '../assets/divider.png';
 import Button from '@material-ui/core/Button';
 
 const HustleDivider = () => {
   return (
-    <div style={styles.container} id="sideHustle">
+    <div style={styles.container} id='sideHustle'>
       <div>
-        <h1 style={{ textTransform: 'uppercase', color: 'white' }}>Side <em style={{ textDecoration: 'underline' }}>Hustle</em></h1>
-        <p style={{color: 'white', opacity: 0.6}}>Join and help us spread the word</p>
+        <h1 style={{ textTransform: 'uppercase', color: 'white' }}>
+          Side <em style={{ textDecoration: 'underline' }}>Hustle</em>
+        </h1>
+        <p style={{ color: 'white', opacity: 0.6 }}>Join and help us spread the word</p>
       </div>
       <div>
         <Button style={styles.button}>Earn 30% - Join Us Now</Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HustleDivider
+export default HustleDivider;
 
 const styles = {
   container: {
@@ -29,7 +31,7 @@ const styles = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   button: {
     backgroundColor: '#50df40',
@@ -37,6 +39,6 @@ const styles = {
     color: 'white',
     borderRadius: 15,
     padding: 15,
-    fontSize: 17
-  }
-}
+    fontSize: 17,
+  },
+};
